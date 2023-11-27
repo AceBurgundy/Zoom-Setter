@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Zoom Setter",
+    "version": "1.0",
+
+    "browser_action": {
+      "default_icon": {
+        "48": "/zoom.png"
+      },
+      "default_title": "Zoom Setter",
+      "default_popup": "/popup.html"
+    },
+
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+
+    "permissions": [
+        "storage",
+        "tabs",
+        "<all_urls>"
+    ]
+  }
+  

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand&display=swap');
+
+:root {
+    --text: #1f230b;
+    --background: #f7f9ec;
+    --primary: #98d378;
+    --secondary: #d1f0d5;
+    --accent: #3cb94f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--background);
+    height: fit-content;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+#zoom-level-message {
+    font-size: 3rem;
+    line-height: 2.7rem;
+}
+
+#zoom-level-tag {
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+
+#save-zoom-level {
+    background-color: var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    color: black;
+    height: 3rem;
+    width: 3rem;
+}
+
+#diskette {
+    position: absolute;
+    width: 1.7rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#save-zoom-level:hover {
+    background-color: var(--accent);
+}
